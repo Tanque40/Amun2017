@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <script type="text/javascript" src="dynamicoptionlist.js"></script>
+  <meta charset="UTF-8">
+  <title>Borrar</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body onLoad="initDynamicOptionLists();">
+  <div id="register">
+  <div id="ticket">
+    <h1>Eliminar registro</h1>
+    </div>
+  <form id="entry" method="POST" action="delete.php" name="form1">
+    <script type="text/javascript">
+var names = new DynamicOptionList();
+names.addDependentFields("sex","names");
+names.forValue("boy").addOptions("Matt","Bob","Joe","Bill","John");
+names.forValue("girl").addOptions("Jane","Angie","Jennifer","Amy","Sue");
+names.forValue("boy").setDefaultOptions("Joe");
+</script>
+<select name="sex"><option value="boy">Boy</option><option value="girl">Girl</option></select>
+<select name="names"><script type="text/javascript">names.printOptions("names");</script></select>
+</p>
+    <input autofocus placeholder="Correo" name="correo">
+    <br>
+    <button type='submit'>Siguiente</button>
+  </form>
+</div>
+  
+  
+</body>
+</html>

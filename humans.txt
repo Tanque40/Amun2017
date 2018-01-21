@@ -1,0 +1,11 @@
+/* TEAM */
+	Developer: Roberto Gervacio
+	From: México CDMX
+	
+
+/* SITE */
+	Last update:
+	Doctype:HTML5
+	IDE: Sublime Text, Brakets,
+  	HTML5, CSS3
+, jQuery, Modernizr
